@@ -1,27 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="30dp"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button3"
+    <EditText
+        android:id="@+id/sayiGiris1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Sayı 1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/sayiGiris2"
+        android:layout_width="300dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:hint="Sayı 2"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/sonuc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buton 1" />
+        android:textSize="30sp"
+        android:textStyle="italic"
+        tools:text="Sonuc = 5" />
 
-    <Button
-        android:id="@+id/button4"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buton 2" />
+        android:layout_marginTop="10dp">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Buton 3" />
+        <Button
+            android:id="@+id/topla"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="+"
+            android:textSize="30sp" />
 
+        <Button
+            android:id="@+id/cikar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:text="-"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/carp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:text="X"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/bol"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:text="/"
+            android:textSize="30sp" />
+    </LinearLayout>
 
 </LinearLayout>
